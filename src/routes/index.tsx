@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import NotFound from '@/pages/NotFound';
 
 const Layout = React.lazy(() => import('@/layouts'));
+// @ts-ignore
 const Home = React.lazy(() => import('@/pages/Home'));
 
 function RootRoutes() {

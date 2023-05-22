@@ -22,5 +22,6 @@ module.exports = {
 		'prettier/prettier': ['error', { endOfLine: 'auto' }],
 		'no-param-reassign': 0,
 		'react/jsx-no-useless-fragment': 0,
+		'@typescript-eslint/ban-ts-comment': 0,
 	},
 };
