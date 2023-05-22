@@ -1,8 +1,9 @@
-import { useQuery } from 'react-query';
+import { ComponentType } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useQuery } from 'react-query';
 
 function Home() {
-	const { t, i18n } = useTranslation(['common']);
+	const { t } = useTranslation(['common']);
 	const { isLoading, error } = useQuery<unknown, Error>('repoData', () =>
 		fetch('https://api.github.com/repos/tannerlinsley/react-query').then(
 			(res) => res.json()
@@ -16,4 +17,4 @@ function Home() {
 	return <div>{t('hello')}</div>;
 }
 
-export default Home;
+export default Home as ComponentType;
