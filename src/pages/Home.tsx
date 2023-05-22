@@ -1,4 +1,3 @@
-import { ComponentType } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useQuery } from 'react-query';
 
@@ -17,4 +16,4 @@ function Home() {
 	return <div>{t('hello')}</div>;
 }
 
-export default Home as ComponentType;
+export default Home;

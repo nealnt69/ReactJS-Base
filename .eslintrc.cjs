@@ -21,5 +21,6 @@ module.exports = {
 		'react/react-in-jsx-scope': 0,
 		'prettier/prettier': ['error', { endOfLine: 'auto' }],
 		'no-param-reassign': 0,
+		'react/jsx-no-useless-fragment': 0,
 	},
 };
